@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: Recipe-Realm
+  data:
+    mongodb:
+      port: 27017
+      host: localhost
+      database: recipe-realm
+  main:
+    banner-mode: off
+
+logging:
+  level:
+    recipe.realm.backend: debug
+    root: info
+  file:
+    name: logs/recipe-realm-log.log
+
+server:
+  port: 2020
